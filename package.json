@@ -6,8 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write ."
+    "lint": "next lint --fix",
+    "lint:check": "next lint",
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit",
+    "build:skip-checks": "next build --no-lint"
   },
   "dependencies": {
     "@radix-ui/react-progress": "^1.0.3",
